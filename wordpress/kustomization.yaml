@@ -1,0 +1,10 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=5ecret
+resources:
+  - mysql-deployment.yaml
+  - wordpress-deployment.yaml
+patchesStrategicMerge:
+  - mysql-pv-patch.yaml
+  - wordpress-pv-patch.yaml

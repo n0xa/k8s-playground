@@ -1,0 +1,16 @@
+wordpressUsername: myuser
+wordpressEmail: ax0n@h-i-r.net
+wordpressFirstName: Noah
+wordpressLastName: Axon
+wordpressBlogName: "Ax0n's Blog"
+replicaCount: 2
+
+global:
+  storageClass: "nfs-client"
+
+persistence:
+  accessModes:
+    - ReadWriteMany   	 
+                      	 
+mariadb:              	 
+  architecture: replication
