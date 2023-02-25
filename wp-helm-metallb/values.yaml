@@ -1,0 +1,13 @@
+wordpressUsername: myuser
+wordpressEmail: ax0n@h-i-r.net
+wordpressFirstName: Noah
+wordpressLastName: Axon
+wordpressBlogName: "Ax0n's Blog"
+replicaCount: 1
+
+global:
+  storageClass: "nfs-client"
+
+service:
+  annotations:
+    metallb.universe.tf/address-pool: wordpress
